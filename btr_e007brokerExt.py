@@ -81,7 +81,7 @@ class TQSta001(bt.Strategy):
         # 检查完成，没有交易中订单（pending order）
         self.order = None
 
-        
+
     def notify_trade(self, trade):
         # 检查交易trade是关闭
         if not trade.isclosed:
@@ -89,7 +89,7 @@ class TQSta001(bt.Strategy):
 
         self.log('交易操盘利润OPERATION PROFIT, 毛利GROSS %.2f, 净利NET %.2f' %
                  (trade.pnl, trade.pnlcomm))        
-     
+
 
     def next(self):
         # next函数是最重要的trade交易（运算分析）函数， 
@@ -191,7 +191,7 @@ print('\tROI投资回报率 Return on investment: %.2f %%' % kret)
 print('\n#9,绘制BT量化分析图形')
 print('\t注意图形当中,最上面的的cash现金，value资产曲线')
 print('\t注意图形当中的买点图标')
-cerebro.plot()
+# cerebro.plot()
 
 #---------
 #

@@ -104,7 +104,7 @@ print('\tROI投资回报率 Return on investment: %.2f %%' % kret)
 print('\n#9,绘制BT量化分析图形')
 print('\t注意图形当中,最上面的的cash现金，value资产曲线')
 print('\t注意图形当中的买点图标，以及对应的曲线波动')
-cerebro.plot()
+# cerebro.plot()
 
 #---------
 #

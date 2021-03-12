@@ -260,7 +260,7 @@ print('\t注意各种不同参数，引起的图形变化')
 
 #1 sty-cor+arrow
 #cerebro.plot(style='bar',**tq_ksty10)
-cerebro.plot(style='candle',**tq_ksty10)
+# cerebro.plot(style='candle',**tq_ksty10)
 
 
 #

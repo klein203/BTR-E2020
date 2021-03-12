@@ -272,7 +272,7 @@ print('\t注意各种不同参数，引起的图形变化')
 #plot多图拼接，BT版的股市：《清明上河图》
 #注意修改其实日期参数为：空字符串
 #numfigs，默认值为：1
-cerebro.plot(numfigs=5)
+# cerebro.plot(numfigs=5)
 
 #5 ha-k line
 #cerebro.plot(style='candle')

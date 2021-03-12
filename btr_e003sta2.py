@@ -92,8 +92,8 @@ print('\t资产总值 Final Portfolio Value: %.2f' % dval9)
 #
 #plt.figure(0)
 print('\n#9,绘制BT量化分析图形')
-cerebro.plot()
-plt.show()
+# cerebro.plot()
+# plt.show()
 
 #---------
 #

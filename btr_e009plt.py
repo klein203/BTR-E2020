@@ -203,7 +203,7 @@ print('\t注意图形当中,最上面的的cash现金，value资产曲线')
 print('\n\t分别运行一下各种不同参数的plot绘图命令')
 print('\t注意每次运行只运行一条plot，其他的用#注释符号屏蔽')
 print('\t各种k线图模式：线条图、candle蜡烛图、ohlc曲线图')
-cerebro.plot()                 #默认是line线条图,或者上一次设置参数              
+# cerebro.plot()                 #默认是line线条图,或者上一次设置参数              
 #cerebro.plot(style='line')     #line线条图
 #cerebro.plot(style='candle')   #candle蜡烛图
 #cerebro.plot(style='bar')       #ohlc曲线图,美式k线图

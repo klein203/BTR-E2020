@@ -265,7 +265,7 @@ print('\t注意各种不同参数，引起的图形变化')
 
 #
 #2 volume
-cerebro.plot(style='candle')      
+# cerebro.plot(style='candle')      
 #cerebro.plot(style='candle',volume =False)             #取消volume成交量图形，默认为 True
 #cerebro.plot(style='candle',volume =True)      
 #cerebro.plot(style='candle',volume =True,voloverlay  =False)        #volume成交量：采用subplot子图模式，默认为voloverlay=True叠加模式

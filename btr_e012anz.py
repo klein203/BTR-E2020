@@ -191,7 +191,7 @@ print('\n\t#2-5,设置addanalyzer分析参数')
       
 cerebro.addanalyzer(SQN)
 #
-cerebro.addanalyzer(bt.analyzers.SharpeRatio, _name = 'SharpeRatio', legacyannual=True)
+# cerebro.addanalyzer(bt.analyzers.SharpeRatio, _name = 'SharpeRatio', legacyannual=True)
 cerebro.addanalyzer(bt.analyzers.AnnualReturn, _name='AnnualReturn')
 #
 cerebro.addanalyzer(bt.analyzers.TradeAnalyzer, _name='TradeAnalyzer')
@@ -219,7 +219,7 @@ print('\n#8,analyzer分析BT量化回测数据')
 strat =results[0]
 anzs=strat.analyzers
 #
-dsharp=anzs.SharpeRatio.get_analysis()['sharperatio']
+# dsharp=anzs.SharpeRatio.get_analysis()['sharperatio']
 trade_info=anzs.TradeAnalyzer.get_analysis()
 #
 dw=anzs.DW.get_analysis()
@@ -227,7 +227,7 @@ max_drowdown_len =dw['max']['len']
 max_drowdown =dw['max']['drawdown']
 max_drowdown_money =dw['max']['moneydown']
 #
-print('\t夏普指数SharpeRatio : ',dsharp)
+# print('\t夏普指数SharpeRatio : ',dsharp)
 print('\t最大回撤周期 max_drowdown_len : ', max_drowdown_len)
 print('\t最大回撤 max_drowdown : ', max_drowdown)
 print('\t最大回撤(资金)max_drowdown_money : ', max_drowdown_money)
@@ -235,7 +235,7 @@ print('\t最大回撤(资金)max_drowdown_money : ', max_drowdown_money)
 #---------
 #
 print('\n#9,绘制BT量化分析图形')
-cerebro.plot()                 
+# cerebro.plot()                 
 
 #---------
 #

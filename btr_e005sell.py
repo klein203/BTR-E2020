@@ -38,8 +38,9 @@ class TQSta001(bt.Strategy):
 
         # 跟踪track交易中的订单（pending orders）
         self.order = None
-        
+    
     def notify_order(self, order):
+        print('==========++++============', order.status)
         if order.status in [order.Submitted, order.Accepted]:
             # 检查订单执行状态order.status：
             # Buy/Sell order submitted/accepted to/by broker 
@@ -156,7 +157,7 @@ print('\tROI投资回报率 Return on investment: %.2f %%' % kret)
 print('\n#9,绘制BT量化分析图形')
 print('\t注意图形当中,最上面的的cash现金，value资产曲线')
 print('\t注意图形当中的买点图标，以及对应的正负收益图标')
-cerebro.plot()
+# cerebro.plot()
 
 
 #---------

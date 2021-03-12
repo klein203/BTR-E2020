@@ -93,6 +93,7 @@ class TQSta001(bt.Strategy):
                  (trade.pnl, trade.pnlcomm))   
 
     def next(self):
+        # print(len(self), self.sma[0])
         # next函数是最重要的trade交易（运算分析）函数， 
         # 调用log函数，输出BT回溯过程当中，工作节点数据包BAR，对应的close收盘价
         self.log('收盘价Close, %.2f' % self.dataclose[0])
@@ -191,7 +192,7 @@ print('\tROI投资回报率 Return on investment: %.2f %%' % kret)
 print('\n#9,绘制BT量化分析图形')
 print('\t注意图形当中,最上面的的cash现金，value资产曲线')
 print('\t注意图形MA均线图形')
-cerebro.plot()
+# cerebro.plot()
 
 #---------
 #

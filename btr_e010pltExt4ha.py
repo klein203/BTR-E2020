@@ -275,7 +275,7 @@ print('\t注意各种不同参数，引起的图形变化')
 #cerebro.plot(numfigs=5)
 
 #5 ha-k line
-cerebro.plot(style='candle')
+# cerebro.plot(style='candle')
 #
 
 
